@@ -89,3 +89,11 @@ lsof -i:3000
 kill -9 3000
 ```
 
+#### 使用supervisor调试express
+
+```shell
+sudo npm install -g supervisor
+sudo ln -s /usr/local/node/bin/supervisor /usr/bin/supervisor
+supervisor ./bin/www
+```
+
